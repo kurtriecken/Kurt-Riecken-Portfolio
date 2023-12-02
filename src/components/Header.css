@@ -1,0 +1,19 @@
+.header {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(45deg, #000000, #FFD700);
+    color: #ffffff; /* Set text color to white for better contrast */
+    font-family: 'Baloo Chettan 2', cursive; /* Choose a suitable font for your text */
+}
+
+.kurt_picture {
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+}

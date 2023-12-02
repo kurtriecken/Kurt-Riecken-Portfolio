@@ -1,13 +1,19 @@
+import './Header.css'
+
 export default function Header() {
     return (
-        <>
-            <div>
+        <div className='header'>
+            <div className="kurt_picture">
+                <a href="/"></a>
+            </div>
+            <div className='navbar'>
                 <nav>
-                    <a href="https://www.google.com">Google</a>
-                    <a href="https://www.github.com">GitHub</a>
-                    <a href="https://www.linkedin.com">LinkedIn</a>
+                    <a href="#">About me</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Resume</a>
+                    <a href="#">Contact</a>
                 </nav>
             </div>
-        </>
+        </div>
     )
 }
