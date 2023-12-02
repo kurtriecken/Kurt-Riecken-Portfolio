@@ -5,12 +5,12 @@
     justify-content: center;
 }
 
-.socials_links a {
+.socials_links a, .reactLogo {
     height: 30px;
     width: auto;
 }
 
 .footer {
-    margin: 0 10% 0 10%;
+    /* margin: 0 10% 0 10%; */
     background-color: blue;
 }

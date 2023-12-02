@@ -1,5 +1,6 @@
 import gitHubLogo from '../assets/github-mark.png'
 import linkedInLogo from '../assets/linkedin.svg'
+import reactLogo from '../assets/react.svg'
 import './Footer.css'
 // import { EmailIcon, PhoneIcon } from '@chakra-ui/icons'
 import { Button } from 'primereact/button';
@@ -8,9 +9,12 @@ import { Button } from 'primereact/button';
 export default function Footer() {
     return (
         <>
-            <div className='footer'>
+            <div className='footer container m-auto card border-0'>
+                <div className='row flex text-center'>
+                    <p className='my-0'>Built with <span><img className='reactLogo' src={reactLogo} alt="" /></span></p>
+                </div>
                 <nav className='socials_links'>
-                    <Button label="Submit" />
+                    {/* <Button label="Submit" /> */}
                     <a href="https://www.google.com">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="" />
                     </a>

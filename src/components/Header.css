@@ -8,6 +8,10 @@
     font-family: 'Baloo Chettan 2', cursive; /* Choose a suitable font for your text */
 }
 
+.header div {
+    background-color: transparent;
+}
+
 .kurt_picture {
     display: flex;
     width: auto;

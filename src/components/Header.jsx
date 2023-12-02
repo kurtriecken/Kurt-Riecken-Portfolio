@@ -10,23 +10,23 @@ export default function Header() {
     const [activeIndex, setActiveIndex] = useState(3);
     const items = [
         // {label: 'Home', icon: 'pi pi-fw pi-home'},
-        {label: 'About me', icon: 'pi pi-fw pi-calendar'},
-        {label: 'Portfolio', icon: 'pi pi-fw pi-pencil'},
-        {label: 'Resume', icon: 'pi pi-fw pi-file'},
-        {label: 'Contact', icon: 'pi pi-fw pi-cog'}
+        { label: 'About me', icon: 'pi pi-fw pi-calendar', url: 'aboutme' },
+        { label: 'Portfolio', icon: 'pi pi-fw pi-pencil', url: 'portfolio' },
+        { label: 'Resume', icon: 'pi pi-fw pi-file', url: 'resume' },
+        { label: 'Contact', icon: 'pi pi-fw pi-cog', url: 'contact' }
     ];
 
     return (
         <div className='header'>
             <div className="kurt_picture">
-            <Link to="/">← Go Back</Link>
-                <a href="#">
-                    <img src={kurtPicture} alt="" />
-                </a>
+                {/* <Link to="/">← Go Back</Link> */}
+                {/* <a href="#"> */}
+                <img src={kurtPicture} alt="" />
+                {/* </a> */}
             </div>
-            <div className="card">
-            {/* <Button onClick={() => setActiveIndex(0)} className="p-button-outlined mb-5" label="Activate 1st" /> */}
-            <TabMenu className='p-menuitem-link' model={items} activeIndex={activeIndex} onTabChange={(e) => setActiveIndex(e.index)} />
+            <div className="card bg-transparent">
+                {/* <Button onClick={() => setActiveIndex(0)} className="p-button-outlined mb-5" label="Activate 1st" /> */}
+                <TabMenu className='p-menuitem-link bg-transparent' model={items} activeIndex={activeIndex} onTabChange={(e) => setActiveIndex(e.index)} />
             </div>
             {/* <div className='navbar'>
                 <nav>
@@ -50,4 +50,3 @@ export default function Header() {
 
 //     )
 // }
-        
