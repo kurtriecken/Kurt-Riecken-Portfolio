@@ -1,17 +1,16 @@
-body {
-    background-color: red;
-}
 
-a img {
-    height: 100px;
-    width: auto;
-}
 
 .socials_links {
     display: flex;
     justify-content: center;
 }
 
+.socials_links a {
+    height: 30px;
+    width: auto;
+}
+
 .footer {
     margin: 0 10% 0 10%;
+    background-color: blue;
 }
