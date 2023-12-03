@@ -13,20 +13,21 @@ export default function BasicDemo() {
     const items = [
         {
             label: 'About Me',
-            icon: () => <Link to="/aboutme"><img id="about" alt="App Store" src="src/assets/Kurt_Riecken.jpg" width="100%"/>
+            icon: () => <Link to="/aboutme"><img id="about" alt="App Store" src="src/assets/Kurt_Riecken.jpg"
+                     width="100%"/>
                 <Tooltip anchorSelect="#about" content="Hello world!"/></Link>,
         },
         {
-            label: 'App Store',
-            icon: () => <Link to="/portfolio"><img alt="App Store" src="src/assets/coding_quiz.jpg" width="100%"/></Link>,
+            label: 'Portfolio',
+            icon: () => <Link to="/portfolio"><img alt="App Store" src="src/assets/photos.png" width="100%"/></Link>,
         },
         {
-            label: 'Photos',
+            label: 'Resume',
             icon: () => <Link to="/resume"><img alt="App Store" src="src/assets/github-mark.png" width="100%"/></Link>,
         },
         {
-            label: 'Trash',
-            icon: () => <Link to="/contact"><img alt="App Store" src="src/assets/github-mark.png" width="100%"/></Link>,
+            label: 'Contact',
+            icon: () => <Link to="/contact"><img alt="App Store" src="src/assets/ichat.png" width="100%"/></Link>,
         }
     ];
 

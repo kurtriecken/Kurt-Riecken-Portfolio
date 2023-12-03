@@ -23,7 +23,7 @@ export default function Portfolio() {
     ];
 
     const imageCollection = [
-        { src: 'src/assets/Tasty_tableau.png', alt: 'Tasty tableau' },
+        { src: 'src/assets/Tasty_tableau.png', alt: 'Tasty tableau', link: 'https://cryptic-tundra-53497-2c1c36d10121.herokuapp.com/', github: 'https://github.com/jradmorrison/tasty-tableau' },
         { src: 'src/assets/coding_quiz.jpg', alt: 'Coding quiz' },
         { src: 'src/assets/picture_3.jpg', alt: 'SongSafari' },
         { src: 'src/assets/picture_5.jpg', alt: 'Picture 5' },
@@ -38,9 +38,12 @@ export default function Portfolio() {
     ]
 
     const itemTemplate = (item) => {
-        return <a data-tooltip-id="my-tooltip" data-tooltip-content={item.alt} href="https://www.google.com">
+        return <div className='text-center'><a data-tooltip-id="my-tooltip" data-tooltip-content={item.alt} href={item.link}>
                 <img className='w-100' src={item.src} ariaLabel={item.alt} style={{height: '400px'}}/>
-                <Tooltip id="my-tooltip" /></a>
+                <Tooltip id="my-tooltip" /></a><a href={item.github} className='m-auto'>GitHub</a>
+                <p>Tasty tableau is your one-stop shop for homegrown recipes! Search our massive database, set up your own profile,
+                    upload recipes, save ones you like, and search to find more from that chef! You'll never go anywhere else for
+                    good cookin'</p></div>
     }
 
     const thumbnailTemplate = (item) => {
