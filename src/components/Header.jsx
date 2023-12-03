@@ -26,7 +26,7 @@ export default function Header() {
             </div>
             <div className="card bg-transparent">
                 {/* <Button onClick={() => setActiveIndex(0)} className="p-button-outlined mb-5" label="Activate 1st" /> */}
-                <TabMenu className='p-menuitem-link bg-transparent' model={items} activeIndex={activeIndex} onTabChange={(e) => setActiveIndex(e.index)} />
+                <TabMenu to='/' className='p-menuitem-link bg-transparent' model={items} activeIndex={activeIndex} onTabChange={(e) => setActiveIndex(e.index)} />
             </div>
             {/* <div className='navbar'>
                 <nav>

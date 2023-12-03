@@ -2,6 +2,7 @@
 import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
+// import Particles from './components/Particles'
 import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
 
 import { Outlet } from 'react-router-dom';
@@ -14,6 +15,7 @@ import 'primeicons/primeicons.css';
 
 
 import { Button } from 'primereact/button';  
+import BasicDemo from './components/Sidebar';
         
 
 function App() {
@@ -21,9 +23,8 @@ function App() {
   return (
     <PrimeReactProvider>
       {/* <Button label="Submit"/> */}
-      <Header />
-      <Outlet />
-      <Footer />
+      <BasicDemo />
+      {/* <Particles /> */}
     </PrimeReactProvider>
   )
 }

@@ -5,14 +5,16 @@ import { InputText } from 'primereact/inputtext'
 
 import { Button } from 'primereact/button'
 import { InputTextarea } from 'primereact/inputtextarea';
-        
+
+// const nodemailer = require('nodemailer');
+// import axios from 'axios'
 
 import '../styles/ContactStyles.css'
 
 export default function Contact() {
     const options = ['Say Hello', 'Send Pizza!'];
     // const [name, setName] = useState('');
-    // const [value, setValue] = useState(options[0]);
+    const [value, setValue] = useState(options[0]);
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -27,19 +29,21 @@ export default function Contact() {
         }));
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         // This is where I will include NODEMAILER to email myself a copy of the message
+
         console.log('Form submittted:', formData);
     }
 
     return (
         <>
             <div className='card container w-75 border-0'>
-                <h2>Contact Form</h2>
+                <SelectButton className='m-3 text-center' value={value} onChange={(e) => setValue(e.value)} options={options} />
+                <h2>{value === 'Say Hello' ? 'Contact' : 'Pizza pizza pizza' }</h2>
                 <form onSubmit={handleSubmit}>
                     <div className="p-field mb-3">
-                        <label className='form-label' htmlFor="name">Name</label>
+                        <label className='form-label' htmlFor="name">{value === 'Say Hello' ? 'Name' : 'Pizza pizza pizza' }</label>
                         <InputText
                             className='form-control w-50'
                             id="name"
@@ -51,7 +55,7 @@ export default function Contact() {
                         />
                     </div>
                     <div className="p-field mb-3">
-                        <label className='form-label' htmlFor="email">Email</label>
+                        <label className='form-label' htmlFor="email">{value === 'Say Hello' ? 'Email' : 'Pizza pizza pizza' }</label>
                         <InputText
                             className='form-control w-50'
                             id="email"
@@ -62,8 +66,9 @@ export default function Contact() {
                             required
                         />
                     </div>
+                    
                     <div className="p-field mb-3">
-                        <label className='form-label' htmlFor="message">Message</label>
+                        <label className='form-label' htmlFor="message">{value === 'Say Hello' ? 'Message' : 'Pizza pizza pizza' }</label>
                         <InputTextarea
                             className='form-control w-50'
                             id="message"
@@ -71,6 +76,7 @@ export default function Contact() {
                             rows={5}
                             value={formData.message}
                             onChange={handleInputChange}
+                            placeholder={value === 'Say Hello' ? 'Say hello!' : 'Ohhh how generous! My favorite is hawaiian 🍕' }
                             autoResize
                             required
                         />
@@ -89,7 +95,6 @@ export default function Contact() {
 
 {/* <div className='card flex text-center'> */ }
 {/* <Link className='' to="/">← Go Back</Link> */ }
-{/* <SelectButton className='' value={value} onChange={(e) => setValue(e.value)} options={options} /> */ }
 {/* <h1>Here will be a contact form to write an email to me; including nodemailer support</h1> */ }
 {/* <div className="card flex text-center">
     <span className="p-float-label m-auto">
