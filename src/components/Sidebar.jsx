@@ -6,13 +6,15 @@ import '../styles/DockDemo.css';
 
 import Footer from './Footer'
 import { Link, Outlet } from 'react-router-dom';
+import { Tooltip } from 'react-tooltip';
 
 export default function BasicDemo() {
     const [position, setPosition] = useState('bottom');    
     const items = [
         {
-            label: 'Finder',
-            icon: () => <Link to="/aboutme"><img alt="App Store" src="src/assets/Kurt_Riecken.jpg" width="100%"/></Link>,
+            label: 'About Me',
+            icon: () => <Link to="/aboutme"><img id="about" alt="App Store" src="src/assets/Kurt_Riecken.jpg" width="100%"/>
+                <Tooltip anchorSelect="#about" content="Hello world!"/></Link>,
         },
         {
             label: 'App Store',
@@ -63,7 +65,7 @@ export default function BasicDemo() {
                     );
                 })}
             </div> */}
-            <div className="dock-window" style={{ backgroundImage: 'url(https://primefaces.org/cdn/primereact/images/dock/window.jpg)', 
+            <div className="dock-window" style={{ backgroundColor: 'lightblue', 
                 height: "100vh" }}>
                 <Dock model={items} position='left' />
                 <Footer />

@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import { Galleria } from 'primereact/galleria';
+// import { Tooltip } from 'bootstrap';
+import { Tooltip } from 'react-tooltip'
 // import { PhotoService } from './service/PhotoService';
 
 export default function Portfolio() {
@@ -36,7 +38,9 @@ export default function Portfolio() {
     ]
 
     const itemTemplate = (item) => {
-        return <a href="https://www.google.com"><img className='w-100' src={item.src} alt={item.alt} style={{height: '400px'}}/></a>
+        return <a data-tooltip-id="my-tooltip" data-tooltip-content={item.alt} href="https://www.google.com">
+                <img className='w-100' src={item.src} ariaLabel={item.alt} style={{height: '400px'}}/>
+                <Tooltip id="my-tooltip" /></a>
     }
 
     const thumbnailTemplate = (item) => {
@@ -44,7 +48,8 @@ export default function Portfolio() {
     }
 
     return (
-        <div className='card container w-75 text-center'>
+        <div className='card container w-75 text-center bg-transparent border-0'>
+            <h1>My Projects</h1>
             <Galleria className='m-auto' value={imageCollection} responsiveOptions={responsiveOptions} numVisible={5} style={{ maxWidth: '650px' }} 
                 item={itemTemplate} thumbnail={thumbnailTemplate} />
             <Link className='m-auto' to="/">← Go Back</Link>

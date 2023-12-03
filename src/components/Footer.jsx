@@ -19,10 +19,10 @@ export default function Footer() {
                     <a href="https://www.google.com">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="" />
                     </a>
-                    <a href="https://www.github.com">
+                    <a href="https://www.github.com/kurtriecken">
                         <img src={gitHubLogo} alt="" />
                     </a>
-                    <a href="https://www.linkedin.com">
+                    <a href="https://www.linkedin.com/in/kurt-riecken-95ba77158/">
                         <img src={linkedInLogo} alt="" />
                     </a>
                     {/* <a href="https://www.linkedin.com">

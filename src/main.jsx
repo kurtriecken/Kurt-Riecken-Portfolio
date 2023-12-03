@@ -17,6 +17,7 @@ import ContactPage from './pages/ContactPage.jsx'
 
 import 'normalize.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-tooltip/dist/react-tooltip.css'
 import './index.css'
 // import { create } from 'lodash';
 

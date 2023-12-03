@@ -38,12 +38,12 @@ export default function Contact() {
 
     return (
         <>
-            <div className='card container w-75 border-0'>
+            <div className='card container w-75 border-0 bg-transparent'>
                 <SelectButton className='m-3 text-center' value={value} onChange={(e) => setValue(e.value)} options={options} />
                 <h2>{value === 'Say Hello' ? 'Contact' : 'Pizza pizza pizza' }</h2>
                 <form onSubmit={handleSubmit}>
                     <div className="p-field mb-3">
-                        <label className='form-label' htmlFor="name">{value === 'Say Hello' ? 'Name' : 'Pizza pizza pizza' }</label>
+                        <label className='form-label' htmlFor="name">{value === 'Say Hello' ? 'Name' : 'Pizza' }</label>
                         <InputText
                             className='form-control w-50'
                             id="name"
@@ -55,7 +55,7 @@ export default function Contact() {
                         />
                     </div>
                     <div className="p-field mb-3">
-                        <label className='form-label' htmlFor="email">{value === 'Say Hello' ? 'Email' : 'Pizza pizza pizza' }</label>
+                        <label className='form-label' htmlFor="email">{value === 'Say Hello' ? 'Email' : 'Pizza pizza' }</label>
                         <InputText
                             className='form-control w-50'
                             id="email"
