@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export default function Home() {
     return (
-        <div className='container w-75'>
+        <div className='container w-75 m-auto align-middle'>
             {/* <Link to="/">← Go Back</Link> */}
             <h1>Hello! This is my new portfolio</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga facere maxime libero repudiandae placeat ut perferendis veritatis ex cum nam, voluptatibus alias delectus laboriosam neque laudantium aliquam accusamus soluta quo!

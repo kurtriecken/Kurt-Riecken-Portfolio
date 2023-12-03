@@ -1,5 +1,17 @@
-/* body {
-    background-image: url('/src/assets/double_bass.jpg');
-    background-size: contain;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    font-family: 'Helvetica', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+}
+
+#root {
+    background-image: linear-gradient(to bottom, #87CEEB, #E6E6FA);
     background-repeat: no-repeat;
-} */
+    background-size: cover;
+    height: 100vh;
+}
+
+#body {
+    height: 100vh;
+}

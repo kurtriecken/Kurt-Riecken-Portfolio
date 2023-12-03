@@ -55,7 +55,7 @@ export default function Portfolio() {
             <h1>My Projects</h1>
             <Galleria className='m-auto' value={imageCollection} responsiveOptions={responsiveOptions} numVisible={5} style={{ maxWidth: '650px' }} 
                 item={itemTemplate} thumbnail={thumbnailTemplate} />
-            <Link className='m-auto' to="/">← Go Back</Link>
+            <Link className='m-auto' to="/">← Home</Link>
             {/* <img src="./assets/github-mark.svg" alt="" /> */}
             {/* <h1>This is my portfolio page!</h1> */}
         </div>

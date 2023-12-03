@@ -12,7 +12,7 @@ import { InputTextarea } from 'primereact/inputtextarea';
 import '../styles/ContactStyles.css'
 
 export default function Contact() {
-    const options = ['Say Hello', 'Send Pizza!'];
+    const options = ['Say Hello', 'Toast?'];
     // const [name, setName] = useState('');
     const [value, setValue] = useState(options[0]);
     const [formData, setFormData] = useState({
@@ -36,10 +36,19 @@ export default function Contact() {
         console.log('Form submittted:', formData);
     }
 
+    const handleSelectToggle = async (e) => {
+        setValue(e.value);
+        if (value === 'Toast?') {
+            document.getElementById('root').style.backgroundImage = "linear-gradient(to bottom, #87CEEB, #E6E6FA)";
+        } else {
+            document.getElementById('root').style.backgroundImage = "url(src/assets/flying_toasters.gif)";
+        }
+    }
+
     return (
         <>
             <div className='card container w-75 border-0 bg-transparent'>
-                <SelectButton className='m-3 text-center' value={value} onChange={(e) => setValue(e.value)} options={options} />
+                <SelectButton className='m-3 text-center' value={value} onChange={handleSelectToggle} options={options} />
                 <h2>{value === 'Say Hello' ? 'Contact' : 'Pizza pizza pizza' }</h2>
                 <form onSubmit={handleSubmit}>
                     <div className="p-field mb-3">
@@ -85,7 +94,7 @@ export default function Contact() {
                         <Button label="Submit" type="submit" />
                     </div>
                 </form>
-                <Link className='m-auto' to="/">← Go Back</Link>
+                <Link className='m-auto' to="/">← Home</Link>
             </div>
         </>
 

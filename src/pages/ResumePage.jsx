@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom';
 
 export default function Resume() {
     return (
-        <div className='card container w-75 border-0 bg-transparent'>
+        <div className='card container w-75 border-0 bg-transparent text-center' style={{"veritcal-align": "middle"}}>
             <h1>This will include a downloadable copy of my resume</h1>
-            <a href="src/assets/Kurt_Riecken_Resume.pdf" download>Click to download</a>
-            <Link className='m-auto' to="/">← Go Back</Link>
+            <a className='m-auto' href="src/assets/Kurt_Riecken_Resume.pdf" download>Click to download</a>
+            <Link className='m-auto' to="/">← Home</Link>
         </div>
     )
 };
