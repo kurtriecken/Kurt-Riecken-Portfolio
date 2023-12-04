@@ -12,8 +12,14 @@
     }
 }
 
+@media screen and (min-width: 992px) {
+    .p-field {
+        width: 40vw;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .p-field {
-        width: 50vw;
+        width: 45vw;
     }
 }

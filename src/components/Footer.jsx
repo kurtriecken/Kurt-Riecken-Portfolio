@@ -8,7 +8,7 @@ import { Button } from 'primereact/button';
 
 export default function Footer() {
     return (
-        <>
+        <div className='mt-5'>
             <div className='footer container m-auto card border-0 bg-transparent'>
                 <div className='row flex text-center my-1'>
                     <p className='my-0'>Built with <span><img className='reactLogo' src={reactLogo} alt="" /></span></p>
@@ -33,6 +33,6 @@ export default function Footer() {
                     </a> */}
                 </nav>
             </div>
-        </>
+        </div>
     )
 }
