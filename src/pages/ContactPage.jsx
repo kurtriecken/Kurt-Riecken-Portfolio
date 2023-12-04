@@ -6,6 +6,8 @@ import { InputText } from 'primereact/inputtext'
 import { Button } from 'primereact/button'
 import { InputTextarea } from 'primereact/inputtextarea';
 
+import { Message } from 'primereact/message';
+
 // const nodemailer = require('nodemailer');
 // import axios from 'axios'
 
@@ -20,6 +22,7 @@ export default function Contact() {
         email: '',
         message: '',
     });
+    const [messageSuccess, setMessageSuccess] = useState(false);
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -33,6 +36,11 @@ export default function Contact() {
         e.preventDefault();
         // This is where I will include NODEMAILER to email myself a copy of the message
 
+        // Use error handling when actually submitting
+        setMessageSuccess(true);
+        setInterval(() => {
+            setMessageSuccess(false);
+        }, 3000)
         console.log('Form submittted:', formData);
     }
 
@@ -49,10 +57,10 @@ export default function Contact() {
         <>
             <div className='card container w-75 border-0 bg-transparent'>
                 <SelectButton className='m-3 text-center' value={value} onChange={handleSelectToggle} options={options} />
-                <h2>{value === 'Say Hello' ? 'Contact' : 'Pizza pizza pizza' }</h2>
+                <h2>{value === 'Say Hello' ? 'Contact' : 'Flying toasters' }</h2>
                 <form onSubmit={handleSubmit}>
                     <div className="p-field mb-3">
-                        <label className='form-label' htmlFor="name">{value === 'Say Hello' ? 'Name' : 'Pizza' }</label>
+                        <label className='form-label' htmlFor="name">{value === 'Say Hello' ? 'Name' : 'Toast' }</label>
                         <InputText
                             className='form-control w-50'
                             id="name"
@@ -64,7 +72,7 @@ export default function Contact() {
                         />
                     </div>
                     <div className="p-field mb-3">
-                        <label className='form-label' htmlFor="email">{value === 'Say Hello' ? 'Email' : 'Pizza pizza' }</label>
+                        <label className='form-label' htmlFor="email">{value === 'Say Hello' ? 'Email' : 'Toastmail' }</label>
                         <InputText
                             className='form-control w-50'
                             id="email"
@@ -77,7 +85,7 @@ export default function Contact() {
                     </div>
                     
                     <div className="p-field mb-3">
-                        <label className='form-label' htmlFor="message">{value === 'Say Hello' ? 'Message' : 'Pizza pizza pizza' }</label>
+                        <label className='form-label' htmlFor="message">{value === 'Say Hello' ? 'Message' : 'Toast your toast' }</label>
                         <InputTextarea
                             className='form-control w-50'
                             id="message"
@@ -85,13 +93,14 @@ export default function Contact() {
                             rows={5}
                             value={formData.message}
                             onChange={handleInputChange}
-                            placeholder={value === 'Say Hello' ? 'Say hello!' : 'Ohhh how generous! My favorite is hawaiian 🍕' }
+                            placeholder={value === 'Say Hello' ? 'Say hello!' : 'I love toast! 🍞' }
                             autoResize
                             required
                         />
                     </div>
                     <div className="p-field">
                         <Button label="Submit" type="submit" />
+                        {messageSuccess ? <Message severity="success" text="Mail sent!"/> : <></>}
                     </div>
                 </form>
                 <Link className='m-auto' to="/">← Home</Link>

@@ -25,15 +25,15 @@ export default function Portfolio() {
     const imageCollection = [
         { src: 'src/assets/Tasty_tableau.png', alt: 'Tasty tableau', link: 'https://cryptic-tundra-53497-2c1c36d10121.herokuapp.com/', github: 'https://github.com/jradmorrison/tasty-tableau',
             about: "Tasty tableau is your one-stop shop for homegrown recipes! Search our massive database, set up your own profile, upload recipes, save ones you like, and search by ingredient or chef! You'll never go anywhere else for good cookin'" },
-        { src: 'src/assets/coding_quiz.jpg', alt: 'Coding quiz', link: 'https://kurtriecken.github.io/Coding-quiz/', github: 'https://github.com/kurtriecken/Coding-quiz' },
-        { src: 'src/assets/picture_3.jpg', alt: 'SongSafari', link: 'https://kathrynfisher3700.github.io/songSafari/', github: 'https://github.com/kathrynfisher3700/songSafari' },
-        { src: 'src/assets/weather.png', alt: 'Weather Dashboard', link: 'https://kurtriecken.github.io/Weather-dashboard/', github: 'https://github.com/kurtriecken/Weather-dashboard' },
-        { src: 'src/assets/tech_blog.png', alt: 'Tech Blog', link: 'https://afternoon-gorge-19720-60f922d0d2e8.herokuapp.com/', github: 'https://github.com/kurtriecken/Tech-Blog' },
-        { src: 'src/assets/Tasty_tableau.png', alt: 'Tasty tableau' },
-        { src: 'src/assets/coding_quiz.jpg', alt: 'Coding quiz' },
-        { src: 'src/assets/picture_3.jpg', alt: 'SongSafari' },
-        { src: 'src/assets/picture_5.jpg', alt: 'Picture 5' },
-        { src: 'src/assets/picture_4.jpg', alt: 'Picture 4' },
+        { src: 'src/assets/coding_quiz.jpg', alt: 'Coding quiz', link: 'https://kurtriecken.github.io/Coding-quiz/', github: 'https://github.com/kurtriecken/Coding-quiz',
+            about: 'Are you a programmer of any level? Do you just have an interest in coding and would like to learn more? Take my quiz! This brief quiz consisting of a series of 6 multiple-choice questions will help you learn or reinforce your codings knowledge and skills. The quiz includes a sleak, functional interface on any device and a color scheme that is clear and easy to read.' },
+        { src: 'src/assets/picture_3.jpg', alt: 'SongSafari', link: 'https://kathrynfisher3700.github.io/songSafari/', github: 'https://github.com/kathrynfisher3700/songSafari',
+            about: "Embark on a guided journey through musical subgenres, discovering new sounds or finding familiar tracks. SongSafari is not just an app; it's your ticket to explore the vast landscape of music." },
+        { src: 'src/assets/weather.png', alt: 'Weather Dashboard', link: 'https://kurtriecken.github.io/Weather-dashboard/', github: 'https://github.com/kurtriecken/Weather-dashboard',
+            about: 'A simple, lightweight site to get the current and five-day forecast for any city in the United States! Results are stored between sessions so you can quickly find up-to-date weather information about any city you have looked up previously.' },
+        { src: 'src/assets/tech_blog.png', alt: 'Tech Blog', link: 'https://afternoon-gorge-19720-60f922d0d2e8.herokuapp.com/', github: 'https://github.com/kurtriecken/Tech-Blog',
+            about: 'Come visit the Tech Blog and share your thoughts about all things technology! Our fun, colorful page has a clean UI designed to get right to the heart of sharing ideas and writing about tech. Sign up today and join the fun!' },
+
 
 
     ]
