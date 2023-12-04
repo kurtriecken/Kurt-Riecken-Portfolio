@@ -13,9 +13,10 @@ export default function BasicDemo() {
     const items = [
         {
             label: 'About Me',
-            icon: () => <Link to="/aboutme"><img id="about" alt="App Store" src="src/assets/Kurt_Riecken.jpg"
-                width="100%" />
-                <Tooltip anchorSelect="#about" content="Hello world!" /></Link>,
+            icon: () => <Link to="/aboutme"><img id="about" alt="App Store" src="src/assets/about.png"
+                 width={"100%"}/>
+                {/* <Tooltip anchorSelect="#about" content="Hello world!" /> */}
+                </Link>,
         },
         {
             label: 'Portfolio',
@@ -23,11 +24,11 @@ export default function BasicDemo() {
         },
         {
             label: 'Resume',
-            icon: () => <Link to="/resume"><img alt="App Store" src="src/assets/github-mark.png" width="100%" /></Link>,
+            icon: () => <Link to="/resume"><img alt="App Store" src="src/assets/notes.png" width="100%" /></Link>,
         },
         {
             label: 'Contact',
-            icon: () => <Link to="/contact"><img alt="App Store" src="src/assets/ichat.png" width="100%" /></Link>,
+            icon: () => <Link to="/contact"><img alt="App Store" src="src/assets/mail.png" width="100%" /></Link>,
         }
     ];
 
@@ -52,7 +53,7 @@ export default function BasicDemo() {
 
     return (
         <div>
-            <div className="card dock-demo border-0 bg-transparent" style={{ height: "100vh" }}>
+            <div className="card dock-demo border-0 bg-transparent" style={{ height: "20vh" }}>
                 {/* <div className="flex flex-wrap gap-3 mb-5">
                 {positions.map((option) => {
                     const { value, label } = option;
@@ -66,15 +67,21 @@ export default function BasicDemo() {
                         </div>
                     );
                 })}
-            </div> */}
-                <div className="bg-transparent flex" style={{ height: "100%" }}>
-                    <Dock model={items} position='top' />
-                    <Outlet />
-
+                </div> */}
+                <div className="dock-window bg-transparent flex" style={{ height: "30%" }}>
+                    <Dock 
+                        model={items} 
+                        position='top' 
+                        pt={{
+                            container: {
+                                style: { bacground: 'linear-gradient(to right,#056BAE, #673976, #056BAE)', borderRadius: '12px' }
+                            }
+                        }}
+                    />
                 </div>
             </div>
+            <Outlet />
             <Footer />
         </div>
-
     )
 }
