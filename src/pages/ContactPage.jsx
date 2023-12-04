@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { SelectButton } from 'primereact/selectbutton'
 import { InputText } from 'primereact/inputtext'
 
+import toastersGif from '../assets/flying_toasters.gif'
+
 import { Button } from 'primereact/button'
 import { InputTextarea } from 'primereact/inputtextarea';
 
@@ -49,7 +51,7 @@ export default function Contact() {
         if (value === 'Toast?') {
             document.getElementById('root').style.backgroundImage = "linear-gradient(to bottom, #87CEEB, #E6E6FA)";
         } else {
-            document.getElementById('root').style.backgroundImage = "url(src/assets/flying_toasters.gif)";
+            document.getElementById('root').style.backgroundImage = `url(${toastersGif})`;
         }
     }
 
