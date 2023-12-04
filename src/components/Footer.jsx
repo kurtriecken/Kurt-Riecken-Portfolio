@@ -10,10 +10,10 @@ export default function Footer() {
     return (
         <>
             <div className='footer container m-auto card border-0 bg-transparent'>
-                <div className='row flex text-center'>
+                <div className='row flex text-center my-1'>
                     <p className='my-0'>Built with <span><img className='reactLogo' src={reactLogo} alt="" /></span></p>
                 </div>
-                <nav className='socials_links'>
+                <nav className='socials_links my-1'>
                     {/* <Button label="Submit" /> */}
                     <h3>Socials: </h3>
                     <a href="mailto:kurt.riecken@gmail.com">

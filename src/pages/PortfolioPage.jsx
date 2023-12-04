@@ -11,7 +11,7 @@ import { Galleria } from 'primereact/galleria';
 import { Tooltip } from 'react-tooltip'
 // import { PhotoService } from './service/PhotoService';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-  import { faHouseChimneyWindow } from '@fortawesome/free-solid-svg-icons'
+import { faHouseChimneyWindow } from '@fortawesome/free-solid-svg-icons'
 
 export default function Portfolio() {
     const [images, setImages] = useState(null);
@@ -64,7 +64,7 @@ export default function Portfolio() {
             <h1>My Projects</h1>
             <Galleria className='m-auto' value={imageCollection} responsiveOptions={responsiveOptions} numVisible={5} style={{ maxWidth: '650px' }} 
                 item={itemTemplate} thumbnail={thumbnailTemplate} />
-            <Link className='m-auto' to="/"><FontAwesomeIcon icon={faHouseChimneyWindow} /></Link>
+            <Link className='m-auto my-3' to="/"><FontAwesomeIcon icon={faHouseChimneyWindow} style={{width: "35px", height: 'auto'}}/></Link>
             {/* <img src="./assets/github-mark.svg" alt="" /> */}
             {/* <h1>This is my portfolio page!</h1> */}
         </div>
