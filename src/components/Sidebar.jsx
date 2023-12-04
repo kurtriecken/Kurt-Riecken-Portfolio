@@ -1,3 +1,8 @@
+// Image imports
+import aboutIcon from '../assets/about.png'
+import photosIcon from '../assets/photos.png'
+import notesIcon from '../assets/notes.png'
+import mailIcon from '../assets/mail.png'
 
 import { useState } from 'react';
 import { Dock } from 'primereact/dock';
@@ -14,22 +19,22 @@ export default function BasicDemo() {
     const items = [
         {
             label: 'About Me',
-            icon: () => <Link to="/aboutme"><img id="about" alt="App Store" src="src/assets/about.png"
+            icon: () => <Link to="/aboutme"><img id="about" alt="App Store" src={aboutIcon}
                  width={"100%"}/>
                 {/* <Tooltip anchorSelect="#about" content="Hello world!" /> */}
                 </Link>,
         },
         {
             label: 'Portfolio',
-            icon: () => <Link to="/portfolio"><img alt="App Store" src="src/assets/photos.png" width="100%" /></Link>,
+            icon: () => <Link to="/portfolio"><img alt="App Store" src={photosIcon} width="100%" /></Link>,
         },
         {
             label: 'Resume',
-            icon: () => <Link to="/resume"><img alt="App Store" src="src/assets/notes.png" width="100%" /></Link>,
+            icon: () => <Link to="/resume"><img alt="App Store" src={notesIcon} width="100%" /></Link>,
         },
         {
             label: 'Contact',
-            icon: () => <Link to="/contact"><img alt="App Store" src="src/assets/mail.png" width="100%" /></Link>,
+            icon: () => <Link to="/contact"><img alt="App Store" src={mailIcon} width="100%" /></Link>,
         }
     ];
 
