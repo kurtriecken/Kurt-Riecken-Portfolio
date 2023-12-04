@@ -16,7 +16,7 @@ export default function Footer() {
                 <nav className='socials_links'>
                     {/* <Button label="Submit" /> */}
                     <h3>Socials: </h3>
-                    <a href="https://www.google.com">
+                    <a href="mailto:kurt.riecken@gmail.com">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="" />
                     </a>
                     <a href="https://www.github.com/kurtriecken">

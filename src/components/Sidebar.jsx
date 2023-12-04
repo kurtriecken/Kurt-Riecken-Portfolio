@@ -2,7 +2,7 @@
 import aboutIcon from '../assets/about.png'
 import photosIcon from '../assets/photos.png'
 import notesIcon from '../assets/notes.png'
-import mailIcon from '../assets/mail.png'
+import mailIcon from '../assets/Calculator.png'
 
 import { useState } from 'react';
 import { Dock } from 'primereact/dock';

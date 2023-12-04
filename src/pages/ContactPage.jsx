@@ -47,7 +47,7 @@ export default function Contact() {
     }
 
     const handleSelectToggle = async (e) => {
-        setValue(e.value);
+        await setValue(e.value);
         if (value === 'Toast?') {
             document.getElementById('root').style.backgroundImage = "linear-gradient(to bottom, #87CEEB, #E6E6FA)";
         } else {

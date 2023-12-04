@@ -10,6 +10,8 @@ import { Galleria } from 'primereact/galleria';
 // import { Tooltip } from 'bootstrap';
 import { Tooltip } from 'react-tooltip'
 // import { PhotoService } from './service/PhotoService';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+  import { faHouseChimneyWindow } from '@fortawesome/free-solid-svg-icons'
 
 export default function Portfolio() {
     const [images, setImages] = useState(null);
@@ -46,7 +48,7 @@ export default function Portfolio() {
 
     const itemTemplate = (item) => {
         return <div className='text-center'><a data-tooltip-id="my-tooltip" data-tooltip-content={item.alt} href={item.link}>
-                <img className='w-100' src={item.src} aria-label={item.alt} style={{height: '400px'}}/>
+                <img className='w-100' src={item.src} aria-label={item.alt} style={{width: '640px', height: 'auto',}}/>
                 <Tooltip id="my-tooltip" /></a><a href={item.github} src="src/assets/github-mark.png" className='text-center'>
                     Github repository
                 </a>
@@ -54,7 +56,7 @@ export default function Portfolio() {
     }
 
     const thumbnailTemplate = (item) => {
-        return <img src={item.src} alt={item.alt} style={{ width: '100%', height: '90px' }} />
+        return <img src={item.src} alt={item.alt} style={{ width: '100%', height: 'auto' }} />
     }
 
     return (
@@ -62,7 +64,7 @@ export default function Portfolio() {
             <h1>My Projects</h1>
             <Galleria className='m-auto' value={imageCollection} responsiveOptions={responsiveOptions} numVisible={5} style={{ maxWidth: '650px' }} 
                 item={itemTemplate} thumbnail={thumbnailTemplate} />
-            <Link className='m-auto' to="/">← Home</Link>
+            <Link className='m-auto' to="/"><FontAwesomeIcon icon={faHouseChimneyWindow} /></Link>
             {/* <img src="./assets/github-mark.svg" alt="" /> */}
             {/* <h1>This is my portfolio page!</h1> */}
         </div>

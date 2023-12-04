@@ -6,6 +6,7 @@ export default function AboutMe() {
         <div className='card container w-75 border-0 bg-transparent'>
             <div className='text-center flex'>
                 <h1>Kurt Riecken</h1>
+                <h3>Full-Stack Web Developer</h3>
                 <p>Kurt is a multi-talented individual whose passion for web development is rivaled only by his love for life's simple pleasures. 
                     As a web developer, he spends his days crafting digital landscapes and bringing websites to life with his intricate coding skills. 
                     With a keen eye for design and an innate understanding of user experience, Kurt is a true maestro in the world of web development. 
@@ -16,8 +17,8 @@ export default function AboutMe() {
                     two adoring girls, and their faithful four-legged companion. Together, they form a tight-knit unit that shares in the simple pleasures of life, 
                     from weekend picnics to cozy evenings by the fireplace. Kurt's love for music also finds expression in his role as a dedicated orchestra member, 
                     where he harmonizes his coding skills with the melodies of his double bass, creating a symphony of passions that define his rich and fulfilling life</p>
-                <Link className='m-auto' to="/">← Home</Link>
             </div>
+            <Link className='m-auto' to="/">← Home</Link>
         </div>
     )
 };
