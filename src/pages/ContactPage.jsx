@@ -63,7 +63,7 @@ export default function Contact() {
                 <SelectButton className='m-3 text-center' value={value} onChange={handleSelectToggle} options={options} />
                 {value === 'Say Hello' ?
                     <h2>Contact</h2> :
-                    <h2 style={{ color: 'white' }}>Flying toasters</h2>}
+                    <h2 style={{ color: 'white' }}>Dun dun dun duh-nah-nah...</h2>}
                 <form onSubmit={handleSubmit}>
                     <div className="p-field mb-3">
                         {value === 'Say Hello' ?
