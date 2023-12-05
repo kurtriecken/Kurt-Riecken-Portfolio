@@ -6,7 +6,8 @@ export default function Home() {
             className='container w-75 m-auto align-middle text-center'
             style={{minHeight: '400px'}}
         >
-            <h1>Welcome!</h1>
+            <h1>Kurt Riecken</h1>
+            <h3>Full Stack Web Developer</h3>
             <p>Welcome to my digital space, where creativity meets functionality and innovation thrives. I'm delighted to invite you to explore my portfolio, 
                 a reflection of my passion for web design and software engineering. Here, you'll find a collection of projects that showcase not only my 
                 technical prowess but also my commitment to creating user-centric, mobile-focused, visually captivating digital experiences. Whether you're a fellow 
