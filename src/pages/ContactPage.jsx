@@ -10,9 +10,6 @@ import { InputTextarea } from 'primereact/inputtextarea';
 
 import { Message } from 'primereact/message';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouseChimneyWindow } from '@fortawesome/free-solid-svg-icons'
-
 // const nodemailer = require('nodemailer');
 // import axios from 'axios'
 
@@ -59,18 +56,20 @@ export default function Contact() {
     }
 
     return (
-        <div 
-            style={{minHeight: '400px'}}
+        <div
+            style={{ minHeight: '400px' }}
         >
             <div className='card container w-75 border-0 bg-transparent'>
                 <SelectButton className='m-3 text-center' value={value} onChange={handleSelectToggle} options={options} />
-                {value === 'Say Hello' ? 
-                <h2>Contact</h2> :
-                <h2 style={{color: 'white'}}>Flying toasters</h2>}
+                {value === 'Say Hello' ?
+                    <h2>Contact</h2> :
+                    <h2 style={{ color: 'white' }}>Flying toasters</h2>}
                 <form onSubmit={handleSubmit}>
                     <div className="p-field mb-3">
-                        {value === 'Say Hello' ? 'Name' : 'Toast' }
-                        <label className='form-label' htmlFor="name"></label>
+                        {value === 'Say Hello' ?
+                            <label className='form-label' htmlFor="email">Name</label> :
+                            <label className='form-label' htmlFor="email" style={{ color: 'white' }}>Toast</label>
+                        }
                         <InputText
                             className='form-control'
                             id="name"
@@ -78,11 +77,15 @@ export default function Contact() {
                             type="text"
                             value={formData.name}
                             onChange={handleInputChange}
+                            placeholder='Name'
                             required
                         />
                     </div>
                     <div className="p-field mb-3">
-                        <label className='form-label' htmlFor="email">{value === 'Say Hello' ? 'Email' : 'Toastmail' }</label>
+                        {value === 'Say Hello' ?
+                            <label className='form-label' htmlFor="email">Email</label> :
+                            <label className='form-label' htmlFor="email" style={{ color: 'white' }}>Toastmail</label>
+                        }
                         <InputText
                             className='form-control'
                             id="email"
@@ -90,12 +93,16 @@ export default function Contact() {
                             type="email"
                             value={formData.email}
                             onChange={handleInputChange}
+                            placeholder='Email'
                             required
                         />
                     </div>
-                    
+
                     <div className="p-field mb-3">
-                        <label className='form-label' htmlFor="message">{value === 'Say Hello' ? 'Message' : 'Toast?' }</label>
+                        {value === 'Say Hello' ?
+                            <label className='form-label' htmlFor="email">Message</label> :
+                            <label className='form-label' htmlFor="email" style={{ color: 'white' }}>Toast?</label>
+                        }
                         <InputTextarea
                             className='form-control'
                             id="message"
@@ -103,14 +110,14 @@ export default function Contact() {
                             rows={5}
                             value={formData.message}
                             onChange={handleInputChange}
-                            placeholder={value === 'Say Hello' ? 'Say hello!' : "It's a contact form --- After Dark!" }
+                            placeholder={value === 'Say Hello' ? 'Say hello!' : "It's a contact form --- After Dark!"}
                             autoResize
                             required
                         />
                     </div>
                     <div className="p-field">
                         <Button label="Submit" type="submit" />
-                        {messageSuccess ? <Message severity="success" text="Mail sent!"/> : <></>}
+                        {messageSuccess ? <Message severity="success" text="Mail sent!" className='mx-3'/> : <></>}
                     </div>
                 </form>
                 {/* <Link className='m-auto' to="/"><FontAwesomeIcon icon={faHouseChimneyWindow} style={{width: "35px", height: 'auto'}}/></Link> */}
