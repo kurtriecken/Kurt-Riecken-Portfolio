@@ -11,7 +11,7 @@ export default function AboutMe() {
                 <div className='container row text-end'>
                     <div className='col-6'>
                         <h1 className='row'>Kurt Riecken</h1>
-                        <h3 className='row'>Full-Stack Web Developer</h3>
+                        <h3 className='row'>Web Developer</h3>
                     </div>
                     <div className='col-6'>
                         <img src={notesIcon} alt="" style={{ width: "90px", border: "solid black 1px", borderRadius: "20px" }} />

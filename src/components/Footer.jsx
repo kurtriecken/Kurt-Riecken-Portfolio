@@ -13,7 +13,7 @@ import { faHouseChimneyWindow } from '@fortawesome/free-solid-svg-icons'
 export default function Footer() {
     return (
         <div className='mt-5'>
-            <Link className='m-auto' to="/"><FontAwesomeIcon className='m-auto' icon={faHouseChimneyWindow} style={{width: "35px", height: 'auto'}}/></Link>
+            <Link className='mb-3' to="/"><FontAwesomeIcon className='m-auto' icon={faHouseChimneyWindow} style={{ width: "35px", height: 'auto' }} /></Link>
 
             <div className='footer container m-auto card border-0 bg-transparent'>
                 <div className='row flex text-center my-1'>
@@ -21,7 +21,7 @@ export default function Footer() {
                 </div>
                 <nav className='socials_links my-1 container flex text-center'>
                     {/* <Button label="Submit" /> */}
-                    <h3>Socials: </h3>
+                    {/* <h3 className='col-3'>Socials: </h3> */}
                     <a href="mailto:kurt.riecken@gmail.com">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="" />
                     </a>
