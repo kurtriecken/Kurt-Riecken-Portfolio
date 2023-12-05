@@ -6,7 +6,10 @@ import { faHouseChimneyWindow } from '@fortawesome/free-solid-svg-icons'
 
 export default function AboutMe() {
     return (
-        <div className='card container w-75 border-0 bg-transparent'>
+        <div 
+            className='card container w-75 border-0 bg-transparent'
+            style={{minHeight: '400px'}}
+        >
             <div className='text-center flex'>
                 <h1>Kurt Riecken</h1>
                 <h3>Full-Stack Web Developer</h3>
@@ -21,7 +24,7 @@ export default function AboutMe() {
                     from weekend picnics to cozy evenings by the fireplace. Kurt's love for music also finds expression in his role as a dedicated orchestra member, 
                     where he harmonizes his coding skills with the melodies of his double bass, creating a symphony of passions that define his rich and fulfilling life</p>
             </div>
-            <Link className='m-auto' to="/"><FontAwesomeIcon icon={faHouseChimneyWindow} style={{width: "35px", height: 'auto'}}/></Link>
+            {/* <Link className='m-auto' to="/"><FontAwesomeIcon icon={faHouseChimneyWindow} style={{width: "35px", height: 'auto'}}/></Link> */}
         </div>
     )
 };

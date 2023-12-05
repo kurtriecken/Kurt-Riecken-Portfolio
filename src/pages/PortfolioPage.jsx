@@ -1,6 +1,6 @@
 import tastyIcon from '../assets/Tasty_tableau.png'
 import quizIcon from '../assets/coding_quiz.jpg'
-import safariIcon from '../assets/picture_3.jpg'
+import safariIcon from '../assets/song_safari.png'
 import weatherIcon from '../assets/weather.png'
 import blogIcon from '../assets/tech_blog.png'
 
@@ -47,11 +47,29 @@ export default function Portfolio() {
     ]
 
     const itemTemplate = (item) => {
-        return <div className='text-center'><a data-tooltip-id="my-tooltip" data-tooltip-content={item.alt} href={item.link}>
-                <img className='w-100' src={item.src} aria-label={item.alt} style={{width: '640px', height: 'auto',}}/>
-                <Tooltip id="my-tooltip" /></a><a href={item.github} src="src/assets/github-mark.png" className='text-center'>
+        return <div 
+                    className='text-center'
+                >
+                                        <h4>
+                        {item.alt}
+                    </h4>
+                    <a data-tooltip-id="my-tooltip" data-tooltip-content={item.alt} href={item.link}>
+                        <img 
+                            className='w-100' 
+                            src={item.src} 
+                            aria-label={item.alt} 
+                            style={{width: '640px', height: 'auto',}}
+                        />
+                        <Tooltip id="my-tooltip" />
+                    </a>
+
+                    <a 
+                        href={item.github} 
+                        src="src/assets/github-mark.png" 
+                        className='text-center'
+                    >
                     Github repository
-                </a>
+                    </a>
                 <p>{item.about}</p></div>
     }
 
@@ -60,13 +78,20 @@ export default function Portfolio() {
     }
 
     return (
-        <div className='card container w-75 text-center bg-transparent border-0'>
+        <div 
+            className='card container w-75 text-center bg-transparent border-0'
+            style={{minHeight: '600px'}}
+        >
             <h1>My Projects</h1>
-            <Galleria className='m-auto' value={imageCollection} responsiveOptions={responsiveOptions} numVisible={5} style={{ maxWidth: '650px' }} 
-                item={itemTemplate} thumbnail={thumbnailTemplate} />
-            <Link className='m-auto my-3' to="/"><FontAwesomeIcon icon={faHouseChimneyWindow} style={{width: "35px", height: 'auto'}}/></Link>
-            {/* <img src="./assets/github-mark.svg" alt="" /> */}
-            {/* <h1>This is my portfolio page!</h1> */}
+            <Galleria 
+                className='m-auto' 
+                value={imageCollection} 
+                responsiveOptions={responsiveOptions} 
+                numVisible={5} 
+                style={{ maxWidth: '650px' }} 
+                item={itemTemplate} 
+                thumbnail={thumbnailTemplate} 
+            />
         </div>
     )
 };

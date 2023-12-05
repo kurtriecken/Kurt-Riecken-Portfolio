@@ -2,7 +2,7 @@
 import aboutIcon from '../assets/about.png'
 import photosIcon from '../assets/photos.png'
 import notesIcon from '../assets/notes.png'
-import mailIcon from '../assets/Calculator.png'
+import mailIcon from '../assets/mail.png'
 
 import { useState } from 'react';
 import { Dock } from 'primereact/dock';
@@ -37,8 +37,13 @@ export default function BasicDemo() {
                         data-pr-position='bottom'
                         style={{ fontSize: "2rem", cursor: "pointer" }}
                     >
-                        <Link to='/aboutme'>
-                            <img id='about' alt='App Store' src={aboutIcon} width={"100%"} />
+                        <Link to='/aboutme' >
+                            <img 
+                                id='about' 
+                                alt='About Kurt' 
+                                src={aboutIcon} 
+                                width={"100%"} 
+                                />
                             {/* <Tooltip anchorSelect="#about" content="Hello world!" /> */}
                         </Link>
                     </i>

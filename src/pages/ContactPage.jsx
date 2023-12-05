@@ -59,11 +59,13 @@ export default function Contact() {
     }
 
     return (
-        <>
+        <div 
+            style={{minHeight: '400px'}}
+        >
             <div className='card container w-75 border-0 bg-transparent'>
                 <SelectButton className='m-3 text-center' value={value} onChange={handleSelectToggle} options={options} />
                 {value === 'Say Hello' ? 
-                <h2>Say Hello</h2> :
+                <h2>Contact</h2> :
                 <h2 style={{color: 'white'}}>Flying toasters</h2>}
                 <form onSubmit={handleSubmit}>
                     <div className="p-field mb-3">
@@ -93,7 +95,7 @@ export default function Contact() {
                     </div>
                     
                     <div className="p-field mb-3">
-                        <label className='form-label' htmlFor="message">{value === 'Say Hello' ? 'Message' : 'Toast your toast' }</label>
+                        <label className='form-label' htmlFor="message">{value === 'Say Hello' ? 'Message' : 'Toast?' }</label>
                         <InputTextarea
                             className='form-control'
                             id="message"
@@ -111,9 +113,9 @@ export default function Contact() {
                         {messageSuccess ? <Message severity="success" text="Mail sent!"/> : <></>}
                     </div>
                 </form>
-                <Link className='m-auto' to="/"><FontAwesomeIcon icon={faHouseChimneyWindow} style={{width: "35px", height: 'auto'}}/></Link>
+                {/* <Link className='m-auto' to="/"><FontAwesomeIcon icon={faHouseChimneyWindow} style={{width: "35px", height: 'auto'}}/></Link> */}
             </div>
-        </>
+        </div>
 
     )
 };
