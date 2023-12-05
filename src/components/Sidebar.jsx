@@ -6,7 +6,6 @@ import mailIcon from '../assets/mail.png'
 
 import { useState } from 'react';
 import { Dock } from 'primereact/dock';
-import { RadioButton } from 'primereact/radiobutton';
 
 import Footer from './Footer'
 import { Link, Outlet } from 'react-router-dom';
@@ -14,9 +13,7 @@ import { Tooltip } from 'primereact/tooltip';
 
 import '../styles/DockDemo.css';
 
-export default function BasicDemo() {
-    const [position, setPosition] = useState('bottom');
-
+export default function Sidebar() {
     const items = [
         {
             label: "About Me",
@@ -44,7 +41,6 @@ export default function BasicDemo() {
                                 src={aboutIcon} 
                                 width={"100%"} 
                                 />
-                            {/* <Tooltip anchorSelect="#about" content="Hello world!" /> */}
                         </Link>
                     </i>
                 </>
@@ -67,7 +63,10 @@ export default function BasicDemo() {
                         className='portfolio-test'
                         data-pr-tooltip='Projects'
                         data-pr-position='bottom'
-                        style={{ fontSize: "2rem", cursor: "pointer" }}
+                        style={{ 
+                            fontSize: "2rem", 
+                            cursor: "pointer" 
+                        }}
                     >
                         <Link to='/portfolio'>
                             <img alt='App Store' src={photosIcon} width='100%' />
@@ -88,15 +87,6 @@ export default function BasicDemo() {
                         onBeforeHide={console.log("on before hide triggered")}
                         mouseTrack
                         mouseTrackTop={17}
-
-                        // id='test-style'
-                        // style={{
-                        //     height: "63px",
-                        //     width: "70px",
-                        //     borderRadius: "50px",
-                        //     fontSize: "13px",
-                        //     textAlign: "center",
-                        // }}
                     />
                     <i
                         className='resume-test'
@@ -132,7 +122,10 @@ export default function BasicDemo() {
                         className='contact-test'
                         data-pr-tooltip='Contact Kurt'
                         data-pr-position='bottom'
-                        style={{ fontSize: "2rem", cursor: "pointer" }}
+                        style={{ 
+                            fontSize: "2rem", 
+                            cursor: "pointer" 
+                        }}
                     >
                         <Link to='/contact'>
                             <img alt='App Store' src={mailIcon} width='100%' />
@@ -159,8 +152,6 @@ export default function BasicDemo() {
                         pt={{
                             container: {
                                 style: {
-                                    // background:
-                                        // 'linear-gradient(to right,#056BAE, #673976, #056BAE)',
                                     borderRadius: '12px'
                                 }
                             }

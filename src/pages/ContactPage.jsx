@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import React, { useState } from "react";
 import { SelectButton } from 'primereact/selectbutton'
 import { InputText } from 'primereact/inputtext'
@@ -120,7 +119,6 @@ export default function Contact() {
                         {messageSuccess ? <Message severity="success" text="Mail sent!" className='mx-3'/> : <></>}
                     </div>
                 </form>
-                {/* <Link className='m-auto' to="/"><FontAwesomeIcon icon={faHouseChimneyWindow} style={{width: "35px", height: 'auto'}}/></Link> */}
             </div>
         </div>
 
@@ -128,13 +126,3 @@ export default function Contact() {
 };
 
 
-{/* <div className='card flex text-center'> */ }
-{/* <Link className='' to="/">← Go Back</Link> */ }
-{/* <h1>Here will be a contact form to write an email to me; including nodemailer support</h1> */ }
-{/* <div className="card flex text-center">
-    <span className="p-float-label m-auto">
-        <InputText id="username" value={name} onChange={(e) => setName(e.target.name)} />
-        <label htmlFor="username">Username</label>
-    </span>
-</div>
-</div> */}

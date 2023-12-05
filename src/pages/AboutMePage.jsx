@@ -29,7 +29,6 @@ export default function AboutMe() {
                     from weekend picnics to cozy evenings by the fireplace. Kurt's love for music also finds expression in his role as a dedicated orchestra member,
                     where he harmonizes his coding skills with the melodies of his double bass, creating a symphony of passions that define his rich and fulfilling life</p>
             </div>
-            {/* <Link className='m-auto' to="/"><FontAwesomeIcon icon={faHouseChimneyWindow} style={{width: "35px", height: 'auto'}}/></Link> */}
         </div>
     )
 };
