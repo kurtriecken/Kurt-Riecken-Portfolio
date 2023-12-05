@@ -22,13 +22,13 @@ export default function Footer() {
                 <nav className='socials_links my-1 container flex text-center'>
                     {/* <Button label="Submit" /> */}
                     {/* <h3 className='col-3'>Socials: </h3> */}
-                    <a href="mailto:kurt.riecken@gmail.com">
+                    {/* <a className='mx-1' href="mailto:kurt.riecken@gmail.com">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="" />
-                    </a>
-                    <a href="https://www.github.com/kurtriecken">
+                    </a> */}
+                    <a className='mx-1' href="https://www.github.com/kurtriecken">
                         <img src={gitHubLogo} alt="" />
                     </a>
-                    <a href="https://www.linkedin.com/in/kurt-riecken-95ba77158/">
+                    <a className='mx-1' href="https://www.linkedin.com/in/kurt-riecken-95ba77158/">
                         <img src={linkedInLogo} alt="" />
                     </a>
                     {/* <a href="https://www.linkedin.com">
