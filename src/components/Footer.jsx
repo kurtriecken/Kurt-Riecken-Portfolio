@@ -15,10 +15,20 @@ export default function Footer() {
 
             <div className='footer container m-auto card border-0 bg-transparent'>
                 <nav className='socials_links my-1 container flex text-center'>
-                    <a className='mx-1' href="https://www.github.com/kurtriecken">
+                    <a
+                        className='mx-1'
+                        href="https://www.github.com/kurtriecken"
+                        target='_blank'
+                        rel="noopener noreferrer"
+                    >
                         <img src={gitHubLogo} alt="" />
                     </a>
-                    <a className='mx-1' href="https://www.linkedin.com/in/kurt-riecken-95ba77158/">
+                    <a 
+                        className='mx-1' 
+                        href="https://www.linkedin.com/in/kurt-riecken-95ba77158/"
+                        target='_blank'
+                        rel="noopener noreferrer"
+                    >
                         <img src={linkedInLogo} alt="" />
                     </a>
                 </nav>
