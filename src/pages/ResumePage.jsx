@@ -1,5 +1,6 @@
 import notesIcon from '../assets/Kurt_Riecken.jpg'
 import '../styles/ResumeStyles.css'
+import resume from '../../src/assets/Kurt_Riecken_Resume.pdf'
 
 export default function Resume() {
     return (
@@ -11,7 +12,7 @@ export default function Resume() {
             <div class="shimmer-container m-auto">
                 <a
                     className='m-auto'
-                    href="src/assets/Kurt_Riecken_Resume.pdf"
+                    href={resume}
                     download>
                     <img src={notesIcon} alt="Resume" style={{ width: "160px" }} />
                 </a>
