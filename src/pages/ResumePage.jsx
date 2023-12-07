@@ -44,13 +44,102 @@ export default function Resume() {
             name: 'Sequelize',
             url: 'https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white',
         },
+        {
+            name: 'ChatGPT',
+            url: 'https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white'
+        },
+        {
+            name: 'MongoDB',
+            url: 'https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white'
+        },
+        {
+            name: 'SQLite',
+            url: 'https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white'
+        },
+        {
+            name: 'Canva',
+            url: 'https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white'
+        },
+        {
+            name: 'Figma',
+            url: 'https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white'
+        },
+        {
+            name: 'CodePen',
+            url: 'https://img.shields.io/badge/Codepen-000000?style=for-the-badge&logo=codepen&logoColor=white'
+        },
+        {
+            name: 'LeetCode',
+            url: 'https://img.shields.io/badge/LeetCode-000000?style=for-the-badge&logo=LeetCode&logoColor=#d16c06',
+        },
+        {
+            name: 'Kaggle',
+            url: 'https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white',
+        },
+        {
+            name: 'Codewars',
+            url: 'https://img.shields.io/badge/Codewars-B1361E?style=for-the-badge&logo=codewars&logoColor=grey',
+        },
+        {
+            name: 'Coursera',
+            url: 'https://img.shields.io/badge/Coursera-%230056D2.svg?style=for-the-badge&logo=Coursera&logoColor=white',
+        },
+        {
+            name: 'edX',
+            url: 'https://img.shields.io/badge/edX-%2302262B.svg?style=for-the-badge&logo=edX&logoColor=white',
+        },
+        {
+            name: 'MDN Web Docs',
+            url: 'https://img.shields.io/badge/MDN_Web_Docs-black?style=for-the-badge&logo=mdnwebdocs&logoColor=white',
+        },
+        {
+            name: 'Apollo-GraphQL',
+            url: 'https://img.shields.io/badge/-ApolloGraphQL-311C87?style=for-the-badge&logo=apollo-graphql',
+        },
+        {
+            name: 'Bulma',
+            url: 'https://img.shields.io/badge/bulma-00D0B1?style=for-the-badge&logo=bulma&logoColor=white',
+        },
+        {
+            name: 'Chakra',
+            url: 'https://img.shields.io/badge/chakra-%234ED1C5.svg?style=for-the-badge&logo=chakraui&logoColor=white',
+        },
+        {
+            name: 'JWT',
+            url: 'https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens',
+        },
+        {
+            name: 'NPM',
+            url: 'https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white',
+        },
+        {
+            name: 'React',
+            url: 'https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB',
+        },
+        {
+            name: 'SASS',
+            url: 'https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white',
+        },
+        {
+            name: 'Webpack',
+            url: 'https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black',
+        },
+        // {
+        //     name: 'SASS',
+        //     url: '',
+        // },
+        // {
+        //     name: 'SASS',
+        //     url: '',
+        // },
+
     ]
 
     const badges = skills.map(skill => (
 
             <img 
                 src={skill.url} 
-                alt="License: MIT" 
+                alt={skill.name} 
                 style={{ height: "20px", height: 'auto' }}
             >
             </img>
@@ -62,7 +151,7 @@ export default function Resume() {
             className='card container w-75 border-0 bg-transparent text-center'
             style={{ verticalAlign: "middle", minHeight: "450px" }}
         >
-            {/* <h2>My skills</h2> */}
+            <h2>My skills</h2>
             <ul style={{ height: "20px", height: 'auto' }}>{badges}</ul>
             <h4>Click my portrait to download a copy of my resume!</h4>
             <div class="shimmer-container m-auto">
