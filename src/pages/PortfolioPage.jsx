@@ -3,6 +3,8 @@ import quizIcon from '../assets/coding_quiz.jpg'
 import safariIcon from '../assets/song_safari.png'
 import weatherIcon from '../assets/weather.png'
 import blogIcon from '../assets/tech_blog.png'
+import employeeIcon from '../assets/home_screen.png'
+
 
 import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
@@ -70,6 +72,14 @@ export default function Portfolio() {
             github: 'https://github.com/kurtriecken/Tech-Blog',
             about: 'Come visit the Tech Blog and share your thoughts about all things technology! Our fun, colorful page has a clean UI designed to get right to the heart of sharing ideas and writing about tech. Sign up today and join the fun!'
         },
+        {
+            src: employeeIcon,
+            alt: 'Employee Tracker',
+            tech: 'MySQL, node.js, Dotenv, bash',
+            link: '',
+            github: 'https://github.com/kurtriecken/Employee-Tracker',
+            about: 'Manage your company database with our ultra-light, user-friendly CLI app! With a developer-friendly interface, you can easily and quickly alter one of many qualities of the employee information stored in your database. Download the package, install, and begin!'
+        }
 
 
 
