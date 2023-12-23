@@ -3,7 +3,7 @@ import quizIcon from '../assets/coding_quiz.jpg'
 import safariIcon from '../assets/song_safari.png'
 import weatherIcon from '../assets/weather.png'
 import blogIcon from '../assets/tech_blog.png'
-import employeeIcon from '../assets/home_screen.png'
+import loveIcon from '../assets/LoveLink.png'
 
 
 // import { Link } from 'react-router-dom';
@@ -32,6 +32,14 @@ export default function Portfolio() {
     ];
 
     const imageCollection = [
+        {
+            src: loveIcon, 
+            alt: 'LoveLink', 
+            tech: 'MERN, Tensorflow, JWT, Multer, Material UI',
+            link: 'https://hidden-garden-06286-72f8e54246d1.herokuapp.com/', 
+            github: 'https://github.com/kurtriecken/Love-Link',
+            about: "Welcome to LoveLink, the premier dating platform designed to bring people together based on shared interests and hobbies. Discover like-minded individuals and kickstart meaningful conversations through our user-friendly messaging system. While enjoying the excitement of finding someone special, users can rest assured that our platform values respect and genuine connections. Join LoveLink today and embark on a journey where connections are sparked, and love blossoms effortlessly."
+        },
         {
             src: tastyIcon, 
             alt: 'Tasty tableau', 
@@ -71,17 +79,7 @@ export default function Portfolio() {
             link: 'https://afternoon-gorge-19720-60f922d0d2e8.herokuapp.com/', 
             github: 'https://github.com/kurtriecken/Tech-Blog',
             about: 'Come visit the Tech Blog and share your thoughts about all things technology! Our fun, colorful page has a clean UI designed to get right to the heart of sharing ideas and writing about tech. Sign up today and join the fun!'
-        },
-        {
-            src: employeeIcon,
-            alt: 'Employee Tracker',
-            tech: 'MySQL, node.js, Dotenv, bash',
-            link: '',
-            github: 'https://github.com/kurtriecken/Employee-Tracker',
-            about: 'Manage your company database with our ultra-light, user-friendly CLI app! With a developer-friendly interface, you can easily and quickly alter one of many qualities of the employee information stored in your database. Download the package, install, and begin!'
         }
-
-
 
     ]
 
