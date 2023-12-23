@@ -138,6 +138,7 @@ export default function Resume() {
     const badges = skills.map(skill => (
 
             <img 
+                key={skill.url}
                 src={skill.url} 
                 alt={skill.name} 
                 style={{ height: "20px", height: 'auto' }}
