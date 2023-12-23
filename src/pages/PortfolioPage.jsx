@@ -6,16 +6,16 @@ import blogIcon from '../assets/tech_blog.png'
 import employeeIcon from '../assets/home_screen.png'
 
 
-import { Link } from 'react-router-dom';
-import React, { useState, useEffect } from 'react';
+// import { Link } from 'react-router-dom';
+// import React, { useState, useEffect } from 'react';
 import { Galleria } from 'primereact/galleria';
-import { Tooltip } from 'react-tooltip'
+// import { Tooltip } from 'react-tooltip'
 // import { PhotoService } from './service/PhotoService';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouseChimneyWindow } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faHouseChimneyWindow } from '@fortawesome/free-solid-svg-icons'
 
 export default function Portfolio() {
-    const [images, setImages] = useState(null);
+    // const [images, setImages] = useState(null);
     const responsiveOptions = [
         {
             breakpoint: '991px',

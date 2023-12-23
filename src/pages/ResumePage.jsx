@@ -141,7 +141,7 @@ export default function Resume() {
                 key={skill.url}
                 src={skill.url} 
                 alt={skill.name} 
-                style={{ height: "20px", height: 'auto' }}
+                
             >
             </img>
 
@@ -153,16 +153,16 @@ export default function Resume() {
             style={{ verticalAlign: "middle", minHeight: "450px" }}
         >
             <h2>My skills</h2>
-            <ul style={{ height: "20px", height: 'auto' }}>{badges}</ul>
+            <ul>{badges}</ul>
             <h4>Click my portrait to download a copy of my resume!</h4>
-            <div class="shimmer-container m-auto">
+            <div className="shimmer-container m-auto">
                 <a
                     className='m-auto'
                     href={resume}
                     download>
                     <img src={notesIcon} alt="Resume" style={{ width: "160px" }} />
                 </a>
-                <div class="shimmer-overlay">
+                <div className="shimmer-overlay">
                 </div>
             </div>
 
